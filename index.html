@@ -4,14 +4,16 @@
   <meta charset="UTF-8">
   <title>SVG website</title>
   <script>
-    function showPopup() {
-
-      alert("You touched the egg!");
-
+    function showText() {
+      document.getElementById("message").innerHTML = "Hello! I'm Snowy";
     }
   </script>
 </head>
 <body>
-    <img id="img"src="img/egg.svg" alt="SVG Image" onclick="showPopup()" width="500" height="500">
+  <center>
+    <h1>Snowman website!</h1>
+    <h3 id="message"></h3>
+    <img id="img" src="img/snowman.svg" alt="SVG Image" onclick="showText()" width="400" height="400">
+  </center>
 </body>
 </html>
